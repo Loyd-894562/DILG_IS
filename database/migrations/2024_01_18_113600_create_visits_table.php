@@ -13,21 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('updates__images', function (Blueprint $table) {
+        Schema::create('visits', function (Blueprint $table) {
             $table->id();
-            $table->longText('images')->nullable();
             $table->timestamps();
-            $table->json('edited_images')->nullable();
         });
     }
 
-    /** 
+    /**
      * Reverse the migrations.
      *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('updates__images');
+        Schema::dropIfExists('visits');
     }
 };

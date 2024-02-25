@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             'position' => 'Developer',
             'email' => 'developer@gmail.com',
             'email_verified_at' => now(),
-            'password' => 'the_developer123',
+            'password' => 'developer_2021',
 
         ]);
         $user->assignRole($role1);

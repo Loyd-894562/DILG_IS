@@ -31,5 +31,9 @@ class HomeController extends Controller
         $home_images = Home_Image::all();
         $latest_issuances = Bohol_Issuance::orderBy('date', 'DESC')->limit(8)->get();
         return view('Normal_View.Home.home', compact( 'home_images', 'news_images', 'latest_issuances'));
+
     }
 }
+
+
+

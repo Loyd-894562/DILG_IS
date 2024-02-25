@@ -32,11 +32,11 @@ return [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
-            'app_id' => env('PUSHER_APP_ID'),
+            'key' => env('f380150bab21018a36ce'),
+            'secret' => env('96b4270c3dae2391becb'),
+            'app_id' => env('1695233'),
             'options' => [
-                'host' => env('PUSHER_HOST') ?: 'api-'.env('PUSHER_APP_CLUSTER', 'mt1').'.pusher.com',
+                'host' => env('PUSHER_HOST') ?: 'api-'.env('PUSHER_APP_CLUSTER', 'ap1').'.pusher.com',
                 'port' => env('PUSHER_PORT', 443),
                 'scheme' => env('PUSHER_SCHEME', 'https'),
                 'encrypted' => true,

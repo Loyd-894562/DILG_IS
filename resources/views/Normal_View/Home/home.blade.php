@@ -449,12 +449,10 @@
                 )}: ${`${timer.getSeconds()}`.padStart(2, '0')}`;
                 todayShowTime.textContent = formateTimer;
             }, 1000);
-        </script>
+            
 
-    </div>
-@endsection
-
-
+            </script>
+   
 <style scoped>
     .zoom {
         transition: transform .2s;
@@ -468,7 +466,7 @@
         transform: scale(0.9);
         text-align: center;
         font-size: 10px;
-    }
+    } 
 
     .responsive {
         max-width: 100%;

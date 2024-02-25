@@ -192,6 +192,7 @@ Route::put('/edit_updates/{id}', [Admin_UpdateController::class, 'edit_updates']
 Route::post('/add_images/{id}', [Admin_UpdateController::class, 'storeImage']);
 Route::post('/approve/{id}', [Admin_UpdateController::class, 'approve'])->name('approve');
 Route::post('/disapprove/{id}', [Admin_UpdateController::class, 'disapprove'])->name('disapprove');
+Route::put('/edit_updates/{id}', [Admin_UpdateController::class, 'edit_updates'])->name('edit_updates');
 
 
 Route::group(['middleware' => ['role:Super-Admin']], function () {
@@ -225,7 +226,7 @@ Route::put('/update-field_officer/{id}', [Admin_Field_OfficersController::class,
 //Normal_View Routes
 Route::get('/organization',[OrganizationController::class, 'index']);
 Route::get('/field_officers',[Field_OfficersController::class, 'index'])->name('/field_officers');
-
+Route::get('/reports/{interval}', 'ReportController@getReport')->name('reports');
 
 //End here
 

@@ -26,7 +26,7 @@
         <div class="">
             @csrf
             @foreach ($news as $new)
-                <a href="#" style="text-decoration: none; color:#030303;">
+                <a href="#" style="text-decoration: none; color:#030303;"> 
                     <div class="card elevation-4">
                         <div class="row d-flex justify-content-center mt-3 ml-3 mr-3  ">
                             <div class="col-md-6 mx-auto mt-5 ">
@@ -36,10 +36,10 @@
                                 <p class="text-left" style="font-size: 18px;">{{ $new->title }}</p>
                                 <p class="text-left" style="font-size: 15px; font-weight: 400;">
                                     {{ Illuminate\Support\Str::limit($new->caption, 500) }}</p>
-                            </div>
+                            </div> 
                             <div class="col-md-5">
                                 <div class="col-md-12" style="height: 400px;">
-
+ 
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0"
@@ -58,7 +58,7 @@
                                                         style="height:350px; width:auto;" />
                                                 </div>
                                             @endforeach
-
+ 
                                         </div>
 
                                     </div>

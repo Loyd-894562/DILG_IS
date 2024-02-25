@@ -17,6 +17,7 @@ class Update extends Model
         'title',
         'caption',
         'images',
+        'edited_images',
 
     ];
 
@@ -49,5 +50,14 @@ class Update extends Model
         ->logOnlyDirty();
     }
 
+    public function getEditedImagesAttribute($value)
+    {
+        return json_decode($value);
+    }
+
+    public function setEditedImagesAttribute($value)
+    {
+        $this->attributes['edited_images'] = json_encode($value);
+    }
 
 }

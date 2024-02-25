@@ -17,3 +17,4 @@ class Knowledge_MaterialsController extends Controller
         return view('Normal_View.Knowledge_Materials.knowledge_materials', compact('knowledge_materials'));
     }
 }
+
