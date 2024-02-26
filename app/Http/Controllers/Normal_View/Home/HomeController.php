@@ -33,6 +33,19 @@ class HomeController extends Controller
         return view('Normal_View.Home.home', compact( 'home_images', 'news_images', 'latest_issuances'));
 
     }
+
+    public function show(){
+        $news_images = Update::where('status', true)
+        ->orderBy('created_at', 'DESC')
+        ->limit(6)
+        ->select('title', 'caption', 'images') // Select only specific attributes
+        ->get();
+
+        // Return data as JSON response
+        return response()->json([
+        'news_images' => $news_images,
+        ]);
+    }
 }
 
 
