@@ -228,6 +228,8 @@ Route::get('/organization',[OrganizationController::class, 'index']);
 Route::get('/field_officers',[Field_OfficersController::class, 'index'])->name('/field_officers');
 Route::get('/reports/{interval}', 'ReportController@getReport')->name('reports');
 
+
+
 //End here
 
 
