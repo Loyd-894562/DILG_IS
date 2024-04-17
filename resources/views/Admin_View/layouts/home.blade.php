@@ -389,30 +389,6 @@
                         </div>
                     </div>
                       
-                       <!-- Visitor Counter -->
-                       <!-- <div class="col-lg-3 col-6">
-                       
-                        <div class="small-box text-secondary elevation-4">
-                        <div class="ml-3"   style="width: 40%; height: 55px; display: flex; ">
-                        <a href='http://www.freevisitorcounters.com'></a>
-                                 <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7b6df58795f1b38d7f8e8e7d2214693c40ed1e60'></script>
-                                 <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/1129813/t/0"></script>
-                            </div>
-                            <div class="inner">
-                                
-                                <p class="text-secondary">Visitor Counter</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fas fa-users text-secondary"></i>
-                            </div>
-                           
-                            <a class="small-box-footer " style="background-color: #234495;"
-                                style=";color:whitesmoke;"><span class="text-light">Click the Counter to View Stats</span>
-                                    </a>
-                        </div>
-                    </div> 
-                     -->
-
                     <!-- ./col -->
                     <div class="col-lg-3 col-6">
                         <!-- small box -->
@@ -517,8 +493,11 @@
         audioform.addEventListener('error', () => {
             audioloading.style.display = 'none';
         });
+        
     </script>
-@endsection
+
+
+    @endsection
 
 <style scoped>
     .img {
